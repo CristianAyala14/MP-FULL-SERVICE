@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.bodycontainer {
+  min-height: 100vh;
+}
+
+header .navbar {
+  padding: 0rem;
+}
+header .navbar .container-fluid {
+  padding: 1rem;
+  background-color: rgb(5, 5, 5);
+}
+header .navbar .container-fluid button span {
+  font-size: 3rem;
+  color: rgba(194, 25, 25, 0.925);
+}
+header .navbar .container-fluid .navbar-nav li a {
+  margin-inline: 2rem;
+  font-size: 2rem;
+  color: rgba(194, 25, 25, 0.925);
+}
+header .navbar .container-fluid .navbar-nav .dropdownli a {
+  margin-inline: 0rem;
+  cursor: default;
+}
+
+@media screen and (max-width: 1000px) {
+  header .container-fluid .dropdownli {
+    padding: 2rem;
+  }
+}
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 80rem;
+  padding: 5rem;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mecanico.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+#hero h2 {
+  font-size: 15rem;
+  font-weight: bolder;
+  color: rgba(202, 192, 192, 0.925);
+  opacity: 0.7;
+}
+#hero h3 {
+  font-size: 7rem;
+  font-weight: bolder;
+  color: rgba(255, 32, 32, 0.925);
+  opacity: 0.7;
+  margin-bottom: 5rem;
+}
+#hero button {
+  font-size: 3rem;
+  background-color: rgb(177, 43, 38);
+  border-radius: 2rem;
+  padding-inline: 3rem;
+  padding-block: 0.5rem;
+  font-weight: bolder;
+  transition: transform 0.2s ease;
+}
+#hero button:hover {
+  transform: scale(1.02);
+}
+#hero button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 770px) {
+  #hero {
+    height: 100rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #hero {
+    height: 50rem;
+  }
+  #hero h2 {
+    font-size: 5rem;
+  }
+  #hero h3 {
+    font-size: 3rem;
+  }
+  #hero button {
+    font-size: 2rem;
+  }
+}
+#Quienes-Somos {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/quienes\ somos.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-size: 3rem;
+  color: white;
+  border-top: 1px solid white;
+  padding-block: 15rem;
+}
+#Quienes-Somos .row1 .col1 {
+  display: flex;
+  justify-content: center center;
+  flex-direction: column;
+  padding: 10rem;
+}
+#Quienes-Somos .row1 .col1 h2 {
+  font-size: 7rem;
+  font-weight: bolder;
+  color: rgba(202, 192, 192, 0.925);
+  opacity: 0.7;
+}
+#Quienes-Somos .row1 .col1 p {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgba(202, 192, 192, 0.925);
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 700px) {
+  #Quienes-Somos .row1 .col1 h2 {
+    font-size: 5rem;
+  }
+  #Quienes-Somos .row1 .col1 p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #Quienes-Somos .row1 .col1 h2 {
+    font-size: 3rem;
+  }
+}
+#Nuestros-Servicios .boxrow .boxcol {
+  background-color: rgb(5, 5, 5);
+  padding: 3rem;
+}
+#Nuestros-Servicios .boxrow .boxcol .carta {
+  height: 40rem;
+  border-radius: 2rem;
+  background-color: rgb(49, 85, 126);
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Nuestros-Servicios .boxrow .boxcol .carta h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgba(253, 242, 242, 0.781);
+}
+#Nuestros-Servicios .boxrow .boxcol .carta:hover {
+  box-shadow: 1px 1px 10px 3px rgba(255, 255, 255, 0.267);
+}
+#Nuestros-Servicios .boxrow .boxcol .carta button {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  transition: transform 0.2s ease;
+}
+#Nuestros-Servicios .boxrow .boxcol .carta button:hover {
+  transform: scale(1.02);
+  background-color: rgb(226, 107, 107);
+}
+#Nuestros-Servicios .boxrow .boxcol .carta button a {
+  text-decoration: none;
+  color: rgb(206, 194, 194);
+}
+#Nuestros-Servicios .boxrow .boxcol:first-child .carta {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(231, 56, 56, 0.7)), url(../img/marcas\ con\ las\ que\ trabajamos.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#Nuestros-Servicios .boxrow .boxcol:nth-child(2) .carta {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(231, 56, 56, 0.9)), url(../img/contacto.avif);
+  background-position: center center;
+  background-size: cover;
+}
+#Nuestros-Servicios .boxrow .boxcol:nth-child(3) .carta {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(231, 56, 56, 0.9)), url(../img/grupo\ vag.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#Nuestros-Servicios .boxrow .boxcol:nth-child(4) .carta {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(231, 56, 56, 0.9)), url(../img/servicios.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+#caracteristicas {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/chequeuo\ mecanico.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-top: 1px solid white;
+  padding: 5rem;
+}
+#caracteristicas li {
+  text-align: center;
+  padding-block: 3rem;
+}
+#caracteristicas li p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+#caracteristicas li p i {
+  color: red;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 3rem;
+  background-color: black;
+  border-top: 1px solid white;
+  z-index: 5;
+}
+footer p {
+  font-size: 1.9rem;
+  color: aliceblue;
+}
+
+#Encontranos .mapa {
+  width: 100%;
+  height: 90vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+.consulta {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  z-index: 0;
+  max-width: 600px;
+  margin: 5rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: black;
+}
+form label {
+  font-weight: bold;
+  color: rgb(204, 41, 41);
+  font-size: 2rem;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 2rem;
+}
+form textarea {
+  resize: vertical;
+}
+form input[type=submit] {
+  background-color: #be3131;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+form input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.servicios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(155, 155, 155);
+}
+.servicios .parte {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.servicios .parte p {
+  margin: 5rem;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+.servicios .parte p:hover {
+  color: #be3131;
+}
+
+/*# sourceMappingURL=index.css.map */
